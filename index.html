@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shuffle Text Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Shuffle Text Game</h1>
+        <div id="topic-selection">
+            <p>Select a topic:</p>
+            <button onclick="selectTopic('fruits')">Fruits</button>
+            <button onclick="selectTopic('animals')">Animals</button>
+            <button onclick="selectTopic('vehicles')">Vehicles</button>
+        </div>
+
+        <div id="game" style="display: none;">
+            <p id="shuffled-word">Loading...</p>
+            <input type="text" id="guess" placeholder="Enter your guess">
+            <button onclick="checkGuess()">Submit</button>
+            <p id="feedback"></p>
+            <button onclick="startGame()">New Word</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
